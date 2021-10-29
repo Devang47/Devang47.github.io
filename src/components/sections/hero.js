@@ -66,9 +66,9 @@ const Hero = () => {
       <p>
         I’m a Web Developer specializing in building (and occasionally designing) exceptional
         digital experiences and decentralized apps. Currently, I’m focused on building
-        decentralized, human- products at{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
+        decentralized, creative products at{' '}
+        <a href="http://ids.company/" target="_blank" rel="noreferrer">
+          ids company
         </a>
         .
       </p>
