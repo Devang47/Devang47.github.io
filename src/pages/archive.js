@@ -1,12 +1,12 @@
 import React, { useRef, useEffect } from 'react';
-import { graphql } from 'gatsby';
+// import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { Layout } from '@components';
-import { Icon } from '@components/icons';
+// import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledTableContainer = styled.div`
@@ -130,7 +130,8 @@ const StyledTableContainer = styled.div`
 `;
 
 const ArchivePage = ({ location, data }) => {
-  const projects = data.allMarkdownRemark.edges;
+  // const projects = data.allMarkdownRemark.edges;
+
   const revealTitle = useRef(null);
   const revealTable = useRef(null);
   const revealProjects = useRef([]);
@@ -138,7 +139,7 @@ const ArchivePage = ({ location, data }) => {
 
   useEffect(() => {
     if (prefersReducedMotion) {
-      return;
+      return data;
     }
 
     sr.reveal(revealTitle.current, srConfig());
@@ -153,7 +154,7 @@ const ArchivePage = ({ location, data }) => {
       <main>
         <header ref={revealTitle}>
           <h1 className="big-heading">Archive</h1>
-          <p className="subtitle">A big list of things I’ve worked on</p>
+          <p className="subtitle">A list of things I’ve worked on</p>
         </header>
 
         <StyledTableContainer ref={revealTable}>
@@ -168,7 +169,8 @@ const ArchivePage = ({ location, data }) => {
               </tr>
             </thead>
             <tbody>
-              {projects.length > 0 &&
+              No projects to show
+              {/* {projects.length > 0 &&
                 projects.map(({ node }, i) => {
                   const {
                     date,
@@ -227,7 +229,7 @@ const ArchivePage = ({ location, data }) => {
                       </td>
                     </tr>
                   );
-                })}
+                })} */}
             </tbody>
           </table>
         </StyledTableContainer>
@@ -242,27 +244,27 @@ ArchivePage.propTypes = {
 
 export default ArchivePage;
 
-export const pageQuery = graphql`
-  {
-    allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/projects/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            date
-            title
-            tech
-            github
-            external
-            ios
-            android
-            company
-          }
-          html
-        }
-      }
-    }
-  }
-`;
+// export const pageQuery = graphql`
+//   {
+//     allMarkdownRemark(
+//       filter: { fileAbsolutePath: { regex: "/projects/" } }
+//       sort: { fields: [frontmatter___date], order: DESC }
+//     ) {
+//       edges {
+//         node {
+// frontmatter {
+//   date
+//   title
+//   tech
+//   github
+//   external
+//   ios
+//   android
+//   company
+// }
+//           html
+//         }
+//       }
+//     }
+//   }
+// `;
