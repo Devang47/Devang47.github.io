@@ -12,4 +12,4 @@ tech:
   - Cryptojs
 ---
 
-An app that helps you to send messages, links, documents to all of your devices in an Encrypted and Secure way! It uses [AES](#) and [SHA-256](#) encription to securely send and store your messages.
+An app that helps you to send messages, links, documents to all of your devices in an Encrypted and Secure way! It uses [AES](#) and [SHA-256](#) encryption to securely send and store your messages.
