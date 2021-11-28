@@ -148,7 +148,7 @@ const About = () => {
             </p> */}
 
             <p>
-              I also recently <a href="https://impulse.pages.dev/">created a webapp</a> that lets
+              I also recently <a href="https://impulse.saklani.dev/">created a webapp</a> that lets
               you send messages, links, documents to all of your devices with a encrypted and secure
               way using Next.js &amp; Firebase.
             </p>
