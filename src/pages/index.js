@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Layout, Hero, About, Featured, Contact } from '@components';
@@ -8,7 +8,9 @@ const StyledMainContainer = styled.main`
 `;
 
 const IndexPage = ({ location }) => {
-  window.location.replace('https://saklani.dev/');
+  useEffect(() => {
+    window.location.replace('https://saklani.dev/');
+  });
   return (
     <Layout location={location}>
       <StyledMainContainer className="fillHeight">
