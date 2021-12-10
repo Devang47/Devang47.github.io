@@ -7,18 +7,21 @@ const StyledMainContainer = styled.main`
   counter-reset: section;
 `;
 
-const IndexPage = ({ location }) => (
-  <Layout location={location}>
-    <StyledMainContainer className="fillHeight">
-      <Hero />
-      <About />
-      {/* <Jobs /> */}
-      <Featured />
-      {/* <Projects /> */}
-      <Contact />
-    </StyledMainContainer>
-  </Layout>
-);
+const IndexPage = ({ location }) => {
+  window.location.replace('https://saklani.dev/');
+  return (
+    <Layout location={location}>
+      <StyledMainContainer className="fillHeight">
+        <Hero />
+        <About />
+        {/* <Jobs /> */}
+        <Featured />
+        {/* <Projects /> */}
+        <Contact />
+      </StyledMainContainer>
+    </Layout>
+  );
+};
 
 IndexPage.propTypes = {
   location: PropTypes.object.isRequired,
