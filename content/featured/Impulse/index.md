@@ -3,7 +3,7 @@ date: '1'
 title: 'Impulse | Messaging service'
 cover: './impulse.png'
 github: 'https://github.com/Devang47/Impulse'
-external: 'https://impulse.saklani.dev/'
+external: 'https://impulse.pages.dev/'
 tech:
   - VS Code
   - Next.js

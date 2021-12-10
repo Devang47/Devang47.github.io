@@ -9,7 +9,9 @@ const StyledMainContainer = styled.main`
 
 const IndexPage = ({ location }) => {
   useEffect(() => {
-    window.location.replace('https://saklani.dev/');
+    if (window.location.host === 'devang-saklani.web.app') {
+      window.location.replace('https://saklani.dev/');
+    }
   });
   return (
     <Layout location={location}>
