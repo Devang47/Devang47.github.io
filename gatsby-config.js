@@ -10,6 +10,16 @@ module.exports = {
     twitterUsername: '@devangsaklani',
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-5CXJ565',
+        includeInDevelopment: false,
+        enableWebVitalsTracking: true,
+        // Defaults to https://www.googletagmanager.com
+        selfHostedOrigin: 'YOUR_SELF_HOSTED_ORIGIN',
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
