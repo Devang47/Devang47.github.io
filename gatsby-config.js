@@ -5,7 +5,7 @@ module.exports = {
     title: 'Devang Saklani | Web Developer',
     description:
       'Devang Saklani is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences and decentralized apps.',
-    siteUrl: 'https://devang-saklani.web.app', // No trailing slash allowed!
+    siteUrl: 'http://saklani.dev/', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@devangsaklani',
   },
